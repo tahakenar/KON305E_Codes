@@ -1,0 +1,32 @@
+%% 
+clear all;clc;
+%--------------- SYMBOLIC TOOLBOX --------------------%
+
+% defining a symbolic var. and using it in an expression
+syms x;
+poly = x^2 + 2*x + 1
+
+% getting the coeffs. of an expression
+coef = coeffs(poly,x,'all')
+
+% solving a symbolic equation
+sol = solve(poly == 0)
+
+% 
+
+%-----------------------------------------------------%
+
+%% 
+clear all;clc;
+%-------------------- FUNCTIONS ----------------------%
+
+sum(3,5)
+
+function return_val = sum(x,y)
+    return_val = x+y;
+end
+
+
+%-----------------------------------------------------%
+
+
