@@ -1,0 +1,49 @@
+%%
+clear all;clc;
+%----------------- 3D PLOT EXAMPLE -------------------%
+
+
+xData = 0:0.5:10;
+yData = rand(1,21);
+[X,Y]= meshgrid(xData,yData);
+
+Z = sin(Y)-tanh(X);
+
+surf(X,Y,Z,'EdgeColor','none')
+
+
+%-----------------------------------------------------%
+
+%%
+clear all;clc;
+
+%--------------- ANONYMOUS FUNCTIONS -----------------%
+
+% Functions as one-line expressions
+
+function_1 = @(x) log(1/x);
+
+function_2 = @(x,y) x+y;
+
+% Additional: Persistent variables: The same as 'static' variables in C
+% language
+
+%-----------------------------------------------------%
+
+%%
+clear all;clc;
+%--------------- MATHEMATICS STUFF -------------------%
+
+% Defining an idendity matrix
+eye(4)
+
+% Matrix determinant
+
+
+
+
+%-----------------------------------------------------%
+
+
+
+
